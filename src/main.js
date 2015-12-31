@@ -10,7 +10,6 @@ const BrowserWindow = electron.BrowserWindow
 let mainWindow;
 
 
-
 // Set up worker
 const worker = ChildProcess.fork(__dirname + '/worker.js')
 let renderProcess = null
@@ -68,9 +67,6 @@ app.on('ready', function() {
 
   // and load the index.html of the app.
   mainWindow.loadURL('file://' + __dirname + '/../ui/index.html');
-
-  // Open the DevTools.
-  mainWindow.webContents.openDevTools();
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {
