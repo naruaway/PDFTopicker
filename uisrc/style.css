@@ -1,0 +1,72 @@
+html {
+  font-family: "Avenir Next", Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 1em;
+}
+
+b {
+  font-weight: bold;
+}
+
+.drop-here {
+  animation: flash-red 1.2s alternate infinite;
+  padding: 2em 1em;
+}
+.processed-files {
+  padding: 2em 1em;
+}
+
+.analyze-button {
+  padding: 0.5em;
+  margin: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  width: 8em;
+  text-align: center;
+  background-color: rgba(0, 200, 255, 0.0);
+  transition: all 0.1s linear;
+}
+
+.analyze-button:hover {
+  background-color: rgba(0, 255, 200, 0.9);
+}
+
+
+@keyframes flash-red {
+  0% {background-color: rgba(0, 255, 200, 0.5)}
+  100% {background-color: rgba(0, 255, 200, 0.0)}
+}
+
+.g-loading {
+ margin: 20px;
+ width: 28px;
+ height: 28px;
+ border-radius: 50%;
+ border-width: 10px;
+ border-style: solid;
+ border-top-color: rgba(0, 0, 0, 0.8);
+ border-right-color: transparent;
+ border-bottom-color: rgba(0, 0, 0, 0.8);
+ border-left-color: transparent;
+ animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  50%  { transform: rotate(180deg);}
+  100%   { transform: rotate(360deg);}
+}
+
+.topics {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.topic {
+  margin: 0.6em;
+  padding: 0.5em;
+  background: rgba(0, 255, 200, 0.1);
+  max-width: 15em;
+}
