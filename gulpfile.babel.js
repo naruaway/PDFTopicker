@@ -35,4 +35,4 @@ gulp.task('watch', () => {
   gulp.watch(['src/*', 'uisrc/*'], ['js', 'uijs', 'html', 'css'])
 })
 
-gulp.task('default', ['js', 'uijs', 'css', 'html', 'watch'])
+gulp.task('default', ['js', 'uijs', 'css', 'html'])
