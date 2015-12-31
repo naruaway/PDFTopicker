@@ -1,27 +1,17 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
-  "main": "main.js",
+  "name": "PDFTopicker",
+  "version": "0.0.0",
+  "description": "extract topics from PDF files",
+  "main": "dist/main.js",
   "scripts": {
     "start": "electron dist/main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atom/electron-quick-start.git"
+    "url": "git+https://github.com/naruaway/pdftopicker.git"
   },
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial"
-  ],
-  "author": "GitHub",
+  "author": "Narutaka Awaya <naru@pixmag.net>",
   "license": "CC0-1.0",
-  "bugs": {
-    "url": "https://github.com/atom/electron-quick-start/issues"
-  },
-  "homepage": "https://github.com/atom/electron-quick-start#readme",
   "devDependencies": {
     "@cycle/core": "^6.0.0",
     "@cycle/dom": "^8.0.0",
@@ -34,12 +24,10 @@
     "gulp": "^3.9.0",
     "gulp-babel": "^6.1.1",
     "immutable": "^3.7.6",
+    "pdf2json": "^0.7.1",
     "rx": "^4.0.7",
     "rx-combine-latest-obj": "^1.0.2",
     "stopwords": "0.0.5",
     "vinyl-source-stream": "^1.1.0"
-  },
-  "dependencies": {
-    "pdf2json": "^0.7.1"
   }
 }
