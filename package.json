@@ -4,7 +4,7 @@
   "description": "extract topics from PDF files",
   "main": "dist/main.js",
   "scripts": {
-    "start": "electron dist/main.js"
+    "start": "gulp && electron dist/main.js"
   },
   "repository": {
     "type": "git",
